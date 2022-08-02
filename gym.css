@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background:  rgba(0,0,0,0.7) url(456.jpg);
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    min-height: 40vh
+}
+
+.navlinks ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlinks ul li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navlinks ul li::after{
+    content:'';
+    height: 2px;
+    width: 0%;
+    background-color: aqua;
+    display: block;
+    transition: 0.3s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+/* this is nav */
+
+.intro{
+    width: fit-content;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#H{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px; 
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#P{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; 
+    margin: 10px;
+}
+
+#btn{
+    background-color: rgb(20, 156, 156);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: rgb(12, 133, 133);
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 50vw;
+    max-height: 100vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.slash{
+    color: aqua;
+}
+
+#S{
+    color: rgb(20, 156, 156);
+}
+
+#L{
+    color: rgb(20, 156, 156);
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img{
+    margin-top: 17px;
+}
+
+.img:hover{
+    cursor: pointer;
+}
